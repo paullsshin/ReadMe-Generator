@@ -14,11 +14,64 @@ const generateMd = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
-    // {
-    //     type:
-    //     message:
-    //     name: 
-    // }
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+        validate: function (answer) {
+            if (answer.length < 3) {
+                return console.log("Please enter a valid username");
+            }
+            return true;
+        }
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+        validate: function (answer) {
+            if (answer.length < 3) {
+                return console.log("Please enter a valid username");
+            }
+            return true;
+        }
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+        validate: function (answer) {
+            if (answer.length < 3) {
+                return console.log("Please enter a valid username");
+            }
+            return true;
+        }
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username",
+    },
 ];
 
 // TODO: Create a function to write README file
